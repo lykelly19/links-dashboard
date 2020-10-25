@@ -1,0 +1,106 @@
+::-moz-selection { /* Code for Firefox */
+  color: #B0E0E6;
+}
+
+::selection {
+  color: #B0E0E6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+html {
+  background: url("unknown.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+body{
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.page-header {
+  padding-top: 50px;
+  background-color: rgba(117, 98, 159, 0.6);
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #c1abad;
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 40rem) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .card {
+    width: 33.3333%;
+  }
+}
+
+p {
+  font-size: 15px;
+}
+
+a, a:visited {
+  color: rgb(142, 67, 156);
+}
+
+.card-subheader {
+  font-weight: 700;
+}
+
+.tag-subheader {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 20px;
+  width: 100px;
+  background-color: rgba(227, 35, 128, 0.85);
+  color: white;
+  margin-right: 10px;
+}
